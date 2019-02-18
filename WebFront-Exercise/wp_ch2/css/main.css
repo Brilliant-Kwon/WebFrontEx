@@ -1,0 +1,11 @@
+@charset "UTF-8";
+h1 {
+    color: #0066FF;
+}
+body {
+    padding: 0px;
+    margin: 10px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}

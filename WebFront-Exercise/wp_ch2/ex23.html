@@ -4,7 +4,48 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>수도 선택자 1</title>
 <style type="text/css">
-
+body {
+  font-family: 돋움,sans-serif;
+  font-size: 12px;
+  color: #333;
+}
+  /*a태그의 수도 선택자들*/
+  a:link {
+    /*링크 자체의 수도 선택자*/
+    color: #f60;
+    text-decoration: none;
+  }
+  a:hover {
+    /*마우스 올렸을 때*/
+    color: #06f;
+    text-decoration: underline;
+  }
+  a:active {
+    /*누르고 있을 때*/
+    color: #F00;
+    font-weight: bold;
+  }
+  a:visited {
+    /*이미 방문한 페이지*/
+    color: #999;
+    /*text-decoration: line-through;*/
+    /*visited는 데코레이션 안 됨*/
+  }
+  h1:before {
+    content: url(images/bul1.gif);
+  }
+  h1:after {
+    content: url(images/bul2.gif);
+  }
+  table {
+    width: 500px;
+  }
+  td {
+    padding: 10px;
+  }
+  tr:hover {
+    background-color: #FC6;
+  }
 </style>
 </head>
 
