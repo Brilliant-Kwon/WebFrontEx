@@ -41,3 +41,44 @@ var initText;
     }
 })(5); // 5에 대해서만 수행하고 사라짐
 console.log(initText);
+
+//익명함수의 활용 2. Callback 함수로 사용
+//함수는 그 자체로 객체 -> 다른 함수의 매개 변수로 전달이 가능
+function calcUsingCallback(val1, val2, func) { //func -> 콜백 함수
+    if (typeof func == "function") {
+        func(val1, val2);
+    }
+}
+
+calcUsingCallback(3, 4, function (v1, v2) {
+    //실제 계산 로직
+    console.log(v1 + v2);
+});
+calcUsingCallback(3, 4, function (v1, v2) {
+    //실제 계산 로직
+    console.log(v1 * v2);
+});
+
+//ES6 : 화살표 표기법, 람다 =>
+
+var f1 = function () {
+    return "Hello";
+};
+var f1Arror = () => "Hello";
+
+console.log(f1(), f1Arror());
+
+f1 = function (name) {
+    return "Hello, " + name;
+};
+f1Arror = (name) => "Hello, " + name;
+
+console.log(f1("둘리"), f1Arror("둘리"));
+
+calcUsingCallback(3, 4, (v1, v2) => {
+    console.log(v1*v2);
+});
+
+console.log(typeof ((v1, v2) => {
+    return v1+v2;
+}));
