@@ -1,19 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script>
-// 객체(타입이 object) 생성 1 : 생성자 함수 -> new Object()
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style type="text/css">
+        body {
+            font-family: "맑은 돋움", "돋움", serif;
+            font-size: 1.25em;
+            line-height: 30px;
+        }
 
-//객체(타입이 object) 생성2 : 리터럴 -> {}
+        #rec2 {
+            position: absolute;
+            /*border: 1px solid #287FC2;*/
+            /*!*top: 200px;*!*/
+            /*!*right: 200px;*!*/
+            /*!*width: 200px;*!*/
+            /*!*height: 200px;*!*/
+        }
+    </style>
+    <script>
+        // 객체(타입이 object) 생성 1 : 생성자 함수 -> new Object()
+        var employee1 = new Object();
+        employee1.name = "노정규";
+        employee1.title = "과장";
+        employee1.showInfo = function () {
+            document.write("이름 : " + this.name + "<br>");
+            document.write("직책 : " + this.title + "<br>");
+            document.write("<br>");
+        };
 
-//객체(타입이 object) 생성3 : JSON(JavaScript Object Notation)
+        employee1.showInfo();
 
-//객체(타입이 object) 생성4 : 생성자 함수 + 내부 변수 초기화 -> function
+        //객체(타입이 object) 생성2 : 리터럴 -> {}
+        var employee2 = {};
+        employee2.name = "류귀열";
+        employee2.title = "부장";
+        employee2.showInfo = function () {
+            document.write("이름 : " + this.name + "<br>");
+            document.write("직책 : " + this.title + "<br>");
+            document.write("<br>");
+        };
 
-</script>
+        employee2.showInfo();
+
+        //객체(타입이 object) 생성3 : JSON(JavaScript Object Notation)
+        var employee3 = {
+            name: "유승훈",
+            title: "대리",
+            showInfo: function () {
+                document.write("이름 : " + this.name + "<br>");
+                document.write("직책 : " + this.title + "<br>");
+                document.write("<br>");
+            }
+        };
+
+        employee3.showInfo();
+
+        //객체(타입이 object) 생성4 : 생성자 함수 + 내부 변수 초기화 -> function
+        var employee4 = function () {
+            this.name = "민미경";
+            this.title = "사장";
+            this.showInfo = function () {
+                document.write("이름 : " + this.name + "<br>");
+                document.write("직책 : " + this.title + "<br>");
+                document.write("<br>");
+            };
+        };
+        var kwon = new employee4();
+        kwon.showInfo();
+
+        //생성자 통해서 내부 변수 초기화 가능하게 만들어보기
+        var employee5 = function (n, t) {
+            this.name = n;
+            this.title = t;
+            this.showInfo = function () {
+                document.write("이름 : " + this.name + "<br>");
+                document.write("직책 : " + this.title + "<br>");
+                document.write("<br>");
+            };
+        };
+
+        var reset = new employee5("손건우", "신입");
+        reset.showInfo();
+
+        //prototype 사용하여 객체 구현
+        var employee6 = function (n) {
+            this.name = n;
+        };
+        employee6.prototype.title = "인턴";
+        employee6.prototype.showInfo = function () {
+            document.write("이름 : " + this.name + "<br>");
+            document.write("직책 : " + this.title + "<br>");
+            document.write("<br>");
+        };
+        var emp_pro = new employee6("김현석");
+        emp_pro.showInfo();
+
+        //실습예제 6-5 ) function과 prototype을 사용하여 구현
+        var rectangle = function (x1, y1, x2, y2, color) {
+            this.xx1 = x1;
+            this.yy1 = y1;
+            this.xx2 = x2;
+            this.yy2 = y2;
+            this.color = color;
+        };
+        rectangle.prototype.show = function () {
+            document.write("[width : " + (this.xx2 - this.xx1) + ", height : " + (this.yy1 - this.yy2) + ", color : " + this.color + " ] 인 사각형을 그렸습니다. <br>");
+        };
+        var rec1 = new rectangle(100, 200, 200, 0, "#000");
+        rec1.show();
+
+        //실습예제 6-6 ) 실제로 css 이용하여 그려보기
+        var rect_real = function (top, right, width, height, size, color) {
+            this.top = top + "px";
+            this.right = right + "px";
+            this.width = width + "px";
+            this.height = height + "px";
+            this.size = size;
+            this.color = color;
+        };
+        rect_real.prototype.draw = function () {
+            // var rec2 = document.getElementsByClassName("rec2");
+            var rec2 = document.getElementById("rec2");
+            rec2.style.top = this.top;
+            rec2.style.right = this.right;
+            rec2.style.width = this.width;
+            rec2.style.height = this.height;
+            rec2.style.border = this.size+"px solid "+this.color;
+
+            var bod = document.getElementById("rec2");
+            bod.style.backgroundColor = "blue";
+        };
+
+        var rec2_go = new rect_real(300, 200, 300, 300, 2, "#000");
+        rec2_go.draw();
+
+
+    </script>
 </head>
 <body>
+<div id="rec2">
+
+</div>
+<script>
+    rect_real.prototype.draw = function () {
+        // var rec2 = document.getElementsByClassName("rec2");
+        var rec2 = document.getElementById("rec2");
+        rec2.style.top = this.top;
+        rec2.style.right = this.right;
+        rec2.style.width = this.width;
+        rec2.style.height = this.height;
+        rec2.style.border = this.size+"px solid "+this.color;
+
+        var bod = document.getElementById("rec2");
+        bod.style.backgroundColor = "blue";
+    };
+
+    var rec2_go = new rect_real(300, 200, 300, 300, 2, "#000");
+    rec2_go.draw();
+</script>
 </body>
 </html>

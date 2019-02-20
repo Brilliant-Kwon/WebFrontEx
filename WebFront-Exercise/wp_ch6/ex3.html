@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script type="text/javascript">
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style type="text/css">
+        body {
+            font-family: "맑은 돋움","돋움",serif;
+            font-size: 1.25em;
+            line-height: 30px;
+        }
+    </style>
+    <script type="text/javascript">
 
-document.write( "<pre>" );
+        document.write("<pre>");
 
-//	1단부터 9단까지 구구단을 출력하는 코드를 작성해 봅시다
+        for (var i = 1; i <= 9; i++) {
+            for (var k=1;k<=9;k++){
+                document.write(k + " x "+ i + " = "+(k*i)+"\t");
+            }
+            document.write("<br>");
+        }
 
-document.write( "</pre>" );
+        //	1단부터 9단까지 구구단을 출력하는 코드를 작성해 봅시다
 
-</script>
+        document.write("</pre>");
+
+    </script>
 </head>
 <body>
 
