@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<!-- 예제 20 ~ 23번까지 -->
+    <meta charset="UTF-8">
+    <title>함수</title>
+    <!-- 예제 20 ~ 23번까지 -->
 
-<script type="text/javascript">
-//	DOM 내장 객체들과 이벤트 리스너
+    <!--BrowserDetect -->
+    <script type="text/javascript" src="browser-detect.js"></script>
+    <script type="text/javascript">
+        //	DOM 내장 객체들과 이벤트 리스너
+        // document.getElementById("myBtn").onclick = function () {
+        //     document.getElementById("myBtn").innerText = "클릭됨";
+        //     displayDate();
+        // };
 
-</script>
+        window.addEventListener("load", function () {
+            //navigator 내장 객체
+            // : 사용자 브라우저 정보
+            console.log("userAgent : ", navigator.userAgent);
+            console.log("appVersion : ", navigator.appVersion);
+
+            //BrowserDetect
+            BrowserDetect.init();
+            console.log("브라우저:", BrowserDetect.browser);
+            console.log("버전:", BrowserDetect.version);
+            console.log("운영체제:", BrowserDetect.OS);
+
+            var btn = document.getElementById("myBtn");
+            btn.onclick = displayDate;
+            btn.onmouseover = displayDate;
+            btn.onmouseout = displayNoop;
+        });
+
+        function displayDate() {
+            document.getElementById("demo").innerText = new Date();
+        }
+
+        function displayNoop() {
+            var obj = document.getElementById("demo");
+            console.log("demo", obj);
+            obj.innerText = "Noop";
+        }
+
+    </script>
 
 </head>
 
 <body>
-	<p>버튼을 클릭하면  <em>displayDate()</em> 함수가 실행 됩니다.</p>
-	<button id="myBtn">Try it</button>
-	<p id="demo"></p>
+<p>버튼을 클릭하면 <em>displayDate()</em> 함수가 실행 됩니다.</p>
+<button id="myBtn">Try it</button>
+<p id="demo">hi</p>
 
-	<div id="btn-reload">reload</div>
-	<div id="btn-prev">이전 페이지</div>
+<div id="btn-reload">reload</div>
+<div id="btn-prev">이전 페이지</div>
+
+<script type="text/javascript">
+    //	DOM 내장 객체들과 이벤트 리스너
+    // document.getElementById("myBtn").onclick = function () {
+    //     document.getElementById("myBtn").innerText = "클릭됨";
+    //     displayDate();
+    // };
+
+    // window.onload = function () {
+
+
+    // document.getElementById("demo").onmouseover =function () {
+    //     displayDate();
+    // };
+    // document.getElementById("demo").onmouseout = function () {
+    //     displayNoop();
+    // };
+</script>
 </body>
 </html>

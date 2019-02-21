@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-//	DOM과 이벤트 연결 연습
+        //	DOM과 이벤트 연결 연습
+        function displayDate() {
+            //내가 만들어 본 것
+            document.getElementById("demo").innerText = document.getElementById("demo").innerText + " : hi";
+            //강사님
+            //id가 demo인 p를 찾아서 현재 시간을 출력
+            var obj = document.getElementById("demo");
+            console.log("demo", obj);
+            obj.innerText = new Date();
+        }
 
-</script>
+        function displayNoop() {
+            var obj = document.getElementById("demo");
+            console.log("demo", obj);
+            obj.innerText = "Noop";
+        }
+    </script>
 
 </head>
 
 <body onload="onLoad()" onunload="onUnload()">
-	<p>버튼을 클릭하면  <em>displayDate()</em> 함수가 실행 됩니다.</p>
-	<button id="myBtn">Try it</button>
-	<p id="demo"></p>
+<p>버튼을 클릭하면 <em>displayDate()</em> 함수가 실행 됩니다.</p>
+<button id="myBtn"
+        onclick="displayDate()">
+    Try it
+</button>
+<p id="demo" onmouseover="displayDate()" onmouseout="displayNoop()">나는 p태그 "demo"</p>
 </body>
 </html>
