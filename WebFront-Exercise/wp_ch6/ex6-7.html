@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script>
-var colors = ["blue", "black", "red", "green"];
-
-</script>
+    <meta charset="UTF-8">
+    <title>배열 이용 사각형 css 그리기</title>
+    <script>
+        var colors = ["blue", "black", "red", "green"];
+        // var box = ["box1", "box2", "box3", "box4"];
+        var rectangle = function (x1, y1, color) {
+            this.x1 = x1;
+            // this.x2 = x2;
+            this.y1 = y1;
+            // this.y2 = y2;
+            this.color = color;
+        };
+    </script>
 </head>
 <body>
+<div class="box1">
+</div>
+<div class="box2">
+</div>
+<div class="box3">
+</div>
+<div class="box4">
+</div>
+<script>
+    rectangle.prototype.show = function () {
+        var width = 50;
+        var height = 50;
 
+        //div 객체를 만들어서 body에 추가해 봅시다.
+        var obj = document.createElement("div");
+        // obj.style.position = "absolute";
+        obj.style.left = this.x1 + "px";
+        obj.style.top = this.y1 + "px";
+        obj.style.width = width + "px";
+        obj.style.height = height + "px";
+        obj.style.backgroundColor = this.color;
+        obj.style.border = "1px solid #000";
+
+        document.body.appendChild(obj);
+    };
+
+    var rects = [];
+    for(var i = 0;i<4;i++){
+        rects[i] = new rectangle(50+i*50,50+i*50,colors[i]);
+        rects[i].show();
+    }
+    /*rect_real.prototype.draw = function () {
+        // var rec2 = document.getElementsByClassName("rec2");
+        var rec2 = document.getElementById(this.name);
+        rec2.style.top = this.top;
+        rec2.style.right = this.right;
+        rec2.style.width = this.width;
+        rec2.style.height = this.height;
+        rec2.style.border = this.size + "px solid " + this.color;
+
+        var bod = document.getElementById("rec2");
+        bod.style.backgroundColor = "blue";
+    };*/
+
+
+
+    // var rec2_go = new rect_real(300, 200, 300, 300, 2, "#000");
+    // rec2_go.draw();
+</script>
 </body>
 </html>

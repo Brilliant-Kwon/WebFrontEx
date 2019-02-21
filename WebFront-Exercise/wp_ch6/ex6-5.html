@@ -6,9 +6,23 @@
 <script>
 //	x1, y1, x2, y2, color를 매개변수로 가지는 Rectangle 클래스를
 //	function을 이용하여 작성해 봅시다
+var rectangle = function (x1, y1, x2, y2, color) {
+    this.xx1 = x1;
+    this.yy1 = y1;
+    this.xx2 = x2;
+    this.yy2 = y2;
+    this.color = color;
+};
 
 //	Rectangle 클래스의 prototype을 이용하여
 //	show 메서드를 만들고, 메서드 내부에서 document.write를 이용, 실제 사각형을 그려 봅시다
+rectangle.prototype.show = function () {
+    var width = this.xx2 - this.xx1;
+    var height = this.yy1 - this.yy2;
+    document.write("[width : " + width + ", height : " + height + ", color : " + this.color + " ] 인 사각형을 그렸습니다. <br>");
+};
+var rec1 = new rectangle(100, 200, 200, 0, "#000");
+rec1.show();
 
 </script>
 </head>
