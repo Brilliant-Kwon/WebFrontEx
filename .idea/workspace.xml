@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93537562-1455-4bd1-9fda-c2388921b456" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex15.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex16.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex17.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex18.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex19.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex20.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex22.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex22.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex23.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex23.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex24.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex24.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex25.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex25.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex26.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex26.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex27.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex27.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex28.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex28.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex29.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex29.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex30.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex30.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex31.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex31.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex32.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex32.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex33.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex33.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex34.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex34.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex35.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex35.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex37.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-Exercise/wp_ch7/ex37.html" afterDir="false" />
-    </list>
+    <list default="true" id="93537562-1455-4bd1-9fda-c2388921b456" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +237,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -487,7 +465,7 @@
       <workItem from="1550537023654" duration="21115000" />
       <workItem from="1550621164303" duration="19540000" />
       <workItem from="1550708727510" duration="19537000" />
-      <workItem from="1550791282048" duration="11781000" />
+      <workItem from="1550791282048" duration="12386000" />
     </task>
     <task id="LOCAL-00001" summary="webfrontEx&#10;ver1.00">
       <created>1550452331306</created>
@@ -556,7 +534,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92549000" />
+    <option name="totallyTimeSpent" value="93154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,7 +547,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="830" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info auto_hide="true" content_ui="combo" id="Project" order="0" weight="0.24271844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -584,7 +561,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32991204" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20087977" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20087977" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50138503" side_tool="true" weight="0.329429" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
