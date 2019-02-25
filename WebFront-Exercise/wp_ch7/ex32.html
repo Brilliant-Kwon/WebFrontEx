@@ -6,6 +6,16 @@
 <script type="text/javascript">
 	$( function() {
 		/* 코드를 완성하세요 */
+        //p 태그를 선택 - > <h1> 변경 후</h1>
+
+        //VJS
+        // var objs = document.getElementsByTagName("p");
+        // for (var i = 0;i<objs.length;i++){
+        //     objs[i].outerHTML = "<h1>변경후</h1>";
+        // }
+
+        //jQuery
+        $("p").replaceWith("<h1>변경후</h1>");
 	} );  
 </script>
 </head>

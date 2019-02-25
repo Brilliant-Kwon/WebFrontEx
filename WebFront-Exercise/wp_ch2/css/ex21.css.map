@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAK;EACH,gBAAgB,EAAE,OAAO;EACzB,eAAe,EAAE,SAAS",
+"sources": ["ex21.scss"],
+"names": [],
+"file": "ex21.css"
+}

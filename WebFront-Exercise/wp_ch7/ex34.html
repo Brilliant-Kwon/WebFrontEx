@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
-<script type="text/javascript">
-	$( function() {
-		/* 코드를 완성하세요 */
-} );  
-</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            /* 코드를 완성하세요 */
+            // VJS
+            var objs = document.querySelectorAll("h1 a");
+            console.log(objs);
+            for (var i = 0; i < objs.length; i++) {
+                var obj = objs[i];
+                //속성 변경
+                obj.setAttribute("href", "http://www.naver.com");
+                obj.setAttribute("title", "naver");
+            }
+
+            //jQuery
+            var $anchor = $("h1 a");
+            console.log($anchor);
+            console.log($anchor.attr("href"));
+            $anchor.attr({
+                "href": "http://www.skuniv.ac.kr",
+                "title": "SKU"
+            });
+            console.log($anchor);
+            console.log($anchor.attr("href"));
+
+        });
+    </script>
 </head>
 <body>
 
